@@ -90,7 +90,7 @@ Send a BTC test coin transaction by inputting the following code:
 
 After running the send_tx function you will get a hash key. Copy that hash and open myCrypto and select TX Status from the left hand side. You will be prompted to input the hash key. 
 
-![ETH TX Status](eth_tx_status.png
+![ETH TX Status](eth_tx_status.png)
 
 After inputting the hash key you will get the confirmation of the transaction for that account:
 
