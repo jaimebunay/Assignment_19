@@ -68,19 +68,15 @@ Send a BTC test coin transaction by inputting the following code:
 
     send_tx(BTCTEST,btc_acc,'n3sLNayxAmKgcdERiGDkedbhS55cow3t6P',.001)
 
-##### Note: I inputted .001 coins as the amount to transfer. Feel free to play with the amount. You may need to put some money into your account from this web address https://coinfaucet.eu/en/btc-testnet/.
+###### Note: I inputted .001 coins as the amount to transfer. Feel free to play with the amount. You may need to put some money into your account from this web address https://coinfaucet.eu/en/btc-testnet/.
         
 Once you run this code you will need to copy the recipients (or senders) address to see the balance. Once you copy the address navigate to the following website https://tbtc.bitaps.com/blocks. At this website paste your address in the prompt on the upper left hand side of the screen
 
 ![BTCTEST Check Balance Screen](btc_balance_check.png)
 
-Once you input your address you will get the below screen:
+Once you input your address you will get the below screen, on this screen click on one of the transactions highlighted in blue, click on the link:
 
-![BTC Transaction List](btc_tx_list.png)
-
-On this screen click on one of the transactions highlighted in blue, click on the link:
-
-![BTCTEST Coin Successful Transaction](blockcypher_transfer.png)
+![BTCTEST Coin Successful Transaction](btc_tx_list.png)
 
  This will lead you to your BTC transaction confirmation as seen below:
 
@@ -127,7 +123,7 @@ Please follow the below links to start the process of installing the required so
 2. PHP Option 2: https://www.youtube.com/watch?v=SNRQSwlOKbs&feature=youtu.be
 3. HD-Wallet-Derive: https://www.youtube.com/watch?v=c-Qc3Pss6oM&feature=youtu.be
 
-Note: After installing PHP you will need to open the php.ini file and add this syntax to the end of the document **extension=php_gmp.dll**
+###### Note: After installing PHP you will need to open the php.ini file and add this syntax to the end of the document **extension=php_gmp.dll**
 
 
 
