@@ -5,6 +5,7 @@
 This wallet will allow the user to transfer ETH or BTC test coins to other designated accounts. It was built using PHP,bit (bitcoin library) and web3.py (Ethereum library) and to use this wallet you simply need to run the code in the following functions:
 
 **1. Derive wallets:**
+
     def derive_wallets (mnemonic,coin,number):
     command = f'php ./hd-wallet-derive/hd-wallet-derive.php --mnemonic="{mnemonic}" -g --numderive="{number}" --coin="{coin}"               --cols=address,index,path,privkey,pubkey,pubkeyhash,xprv,xpub --format=json'
     p = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True)
@@ -16,6 +17,7 @@ This wallet will allow the user to transfer ETH or BTC test coins to other desig
     Note: If you are using a MAC computer you will need to replace ./hd-wallet-derive/hd-wallet-derive.php with ./derive
     
 **2. Linking the transaction signing libraries:**
+
     def priv_key_to_account (coin, priv_key):
     if coin == ETH:
         return Account.privateKeyToAccount(priv_key)
@@ -23,6 +25,7 @@ This wallet will allow the user to transfer ETH or BTC test coins to other desig
         return PrivateKeyTestnet(priv_key)
         
 **3. Creating the transaction:**
+
     def create_tx(coin, account, to, amount):
     if coin == ETH:
         gasEstimate = w3.eth.estimateGas(
@@ -41,6 +44,7 @@ This wallet will allow the user to transfer ETH or BTC test coins to other desig
         return PrivateKeyTestnet.prepare_transaction(account.address, [(to, amount, BTC)])
         
 **4. Sending the transaction:**
+
     def send_tx(coin,account, recipient, amount):
         tx = create_tx(coin,account,recipient,amount)
 
