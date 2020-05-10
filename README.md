@@ -68,7 +68,7 @@ Send a BTC test coin transaction by inputting the following code:
 
     send_tx(BTCTEST,btc_acc,'n3sLNayxAmKgcdERiGDkedbhS55cow3t6P',.001)
 
-Note: I inputted .001 coins as the amount to transfer. Feel free to play with the amount. You may need to put some money into your account from this web address https://coinfaucet.eu/en/btc-testnet/.
+##### Note: I inputted .001 coins as the amount to transfer. Feel free to play with the amount. You may need to put some money into your account from this web address https://coinfaucet.eu/en/btc-testnet/.
         
 Once you run this code you will need to copy the recipients (or senders) address to see the balance. Once you copy the address navigate to the following website https://tbtc.bitaps.com/blocks. At this website paste your address in the prompt on the upper left hand side of the screen
 
