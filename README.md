@@ -66,7 +66,7 @@ Below are examples of successful transactions with both the BTC and ETH test coi
 
 Send a BTC test coin transaction by inputting the following code:
 
-send_tx(BTCTEST,btc_acc,'n3sLNayxAmKgcdERiGDkedbhS55cow3t6P',.001)
+    send_tx(BTCTEST,btc_acc,'n3sLNayxAmKgcdERiGDkedbhS55cow3t6P',.001)
 
 Note: I inputted .001 coins as the amount to transfer. Feel free to play with the amount.
         
@@ -90,7 +90,7 @@ On this screen click on one of the transactions highlighted in blue, click on th
 
 Send a BTC test coin transaction by inputting the following code:
 
-send_tx(ETH,eth_acc,'0x8B2071CFC67f596BA4C280356bFeED43C030A5c6',1250000000000000000000)
+    send_tx(ETH,eth_acc,'0x8B2071CFC67f596BA4C280356bFeED43C030A5c6',1250000000000000000000)
 
 After running the send_tx function you will get a hash key. Copy that hash and open myCrypto and select TX Status from the left hand side. You will be prompted to input the hash key. 
 
@@ -110,18 +110,18 @@ Include installing pip dependencies using requirements.txt, as well as cloning a
 You may include the hd-wallet-derive folder in your repo, but still include the install instructions. You do not
 need to include Python or PHP installation instructions.
 
-## **HD Derive Wallet Installation process**
+### **HD Derive Wallet Installation process**
 
 The hd-wallet-derive library is written in the PHP language; hence, you will need to first install and setup PHP on your machines before installing and then running the hd-wallet-derive library.
 
 Please follow the below links to start the process of installing the required software:
 
-## **Windows User**
+### **Windows User**
 
 1. PHP: https://www.youtube.com/watch?v=IvcZZaIEL_4&feature=youtu.be
 2. HD-Wallet-Derive: https://www.youtube.com/watch?v=A_tqm4j4vsY&feature=youtu.be
 
-## **MAC Users**
+### **MAC Users**
 
 1. PHP Option 1: https://www.youtube.com/watch?v=Q3RA7PiW9Ws&feature=youtu.be
 2. PHP Option 2: https://www.youtube.com/watch?v=SNRQSwlOKbs&feature=youtu.be
