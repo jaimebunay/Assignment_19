@@ -7,21 +7,21 @@ This wallet will allow the user to transfer ETH or BTC test coins to other desig
 **1. Derive wallets:**
 
     def derive_wallets (mnemonic,coin,number):
-    command = f'php ./hd-wallet-derive/hd-wallet-derive.php --mnemonic="{mnemonic}" -g --numderive="{number}" --coin="{coin}"               --cols=address,index,path,privkey,pubkey,pubkeyhash,xprv,xpub --format=json'
-    p = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True)
-    (output, err) =p.communicate()
-    p_status = p.wait()
-    keys = json.loads(output)
-    return keys
+      command = f'php ./hd-wallet-derive/hd-wallet-derive.php --mnemonic="{mnemonic}" -g --numderive="{number}" --coin="{coin}"               --cols=address,index,path,privkey,pubkey,pubkeyhash,xprv,xpub --format=json'
+      p = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True)
+      (output, err) =p.communicate()
+      p_status = p.wait()
+      keys = json.loads(output)
+      return keys
     
     Note: If you are using a MAC computer you will need to replace ./hd-wallet-derive/hd-wallet-derive.php with ./derive
     
 **2. Linking the transaction signing libraries:**
 
     def priv_key_to_account (coin, priv_key):
-    if coin == ETH:
+      if coin == ETH:
         return Account.privateKeyToAccount(priv_key)
-    elif coin == BTCTEST:
+      elif coin == BTCTEST:
         return PrivateKeyTestnet(priv_key)
         
 **3. Creating the transaction:**
@@ -90,7 +90,7 @@ Send a BTC test coin transaction by inputting the following code:
 
 After running the send_tx function you will get a hash key. Copy that hash and open myCrypto and select TX Status from the left hand side. You will be prompted to input the hash key. 
 
-![ETH TX Status](img src="https://github.com/selprince/Assignment_19/blob/master/eth_tx_status.png)
+![ETH TX Status](eth_tx_status.png
 
 After inputting the hash key you will get the confirmation of the transaction for that account:
 
