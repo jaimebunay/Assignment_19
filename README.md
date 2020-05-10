@@ -94,15 +94,15 @@ send_tx(ETH,eth_acc,'0x8B2071CFC67f596BA4C280356bFeED43C030A5c6',125000000000000
 
 After running the send_tx function you will get a hash key. Copy that hash and open myCrypto and select TX Status from the left hand side. You will be prompted to input the hash key. 
 
-![ETH TX Status](eth_tx_status.png)
+![](eth_tx_status.png)
 
 After inputting the hash key you will get the confirmation of the transaction for that account:
 
-![ETH MyCrypto Confirmation](eth_transaction_success.png)
+![](eth_transaction_success.png)
 
 You can also check your general balance on myCrypto by changing wallet and selecting the Address access option and input your account address:
 
-![ETH Account Balance](eth_account_balance.png)
+![](eth_account_balance.png)
 
 ## **Core Requirements**
 
